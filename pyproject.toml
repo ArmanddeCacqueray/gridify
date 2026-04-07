@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polargrid-mapping"
+version = "0.1.0"
+description = "Generate structured grids from scattered 2D points using convex hull layering"
+authors = [{ name = "ArmanddeCacqueray", email = "armanddecacqueray@sfr.fr" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "scipy"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
